@@ -47,8 +47,14 @@ def find_eulerian_path(edges, n):
     start = 0
     adj = Util.adj_list(edges, n, False)
 
+    # Check if the graph is Eulerian using exception handling
+    try:
+        if not eulerian.is_eulerian(adj):
+            raise ValueError("The graph is not Eulerian")
+    except ValueError as e:
+        print(f"Error: {e}")
+        # Handle the error or exit the program, depending on your requirements
 
-    assert (eulerian.is_eulerian(adj))
     degrees = eulerian.degres(adj)
 
     for i in range(len(degrees)):
