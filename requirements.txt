@@ -31,7 +31,7 @@ osmapi==4.0.0
 osmnx==1.8.0
 packaging==23.2
 pandas==2.1.4
-Pillow==10.1.0
+Pillow==10.2.0
 pipenv==2023.11.15
 platformdirs==4.1.0
 plotly==5.18.0
