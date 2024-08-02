@@ -10,7 +10,7 @@ contourpy==1.2.0
 cycler==0.12.1
 distlib==0.3.7
 filelock==3.13.1
-fiona==1.9.5
+fiona==1.9.6
 folium==0.15.1
 fonttools==4.46.0
 geographiclib==2.0
