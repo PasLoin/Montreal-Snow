@@ -9,22 +9,19 @@ import real.stats as st
 import matplotlib.pyplot as plt
 
 def parse_argument():
-    if "google.colab" in sys.modules:
-        # Set default values for city and country when running in Colab
+    ps = argparse.ArgumentParser(description="Big demo.")
+    ps.add_argument("--city",
+                    type=str,
+                    help="Specify city to search.")
+    ps.add_argument("--country",
+                    type=str,
+                    help="Specify country to search.")
+    args = ps.parse_args()
+    if args.city is None:
         city = "Hampstead"
         country = "Canada"
         return city, country
-    else:
-        # Use argparse for command-line arguments
-        ps = argparse.ArgumentParser(description="Big demo.")
-        ps.add_argument("--city", type=str, help="Specify city to search.")
-        ps.add_argument("--country", type=str, help="Specify country to search.")
-        args = ps.parse_args()
-        if args.city is None:
-            city = "Hampstead"
-            country = "Canada"
-            return city, country
-        return args.city, args.country
+    return args.city, args.country
 
 def main():
     city, country = parse_argument()
