@@ -21,7 +21,7 @@ def parse_argument():
                     help="Specify country to search.")
     args = ps.parse_args()
     if args.city is None:
-        city = "Redu"
+        city = "Ixelles"
         country = "Belgique"
         return city, country
     return args.city, args.country
