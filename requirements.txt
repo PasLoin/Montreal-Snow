@@ -1,6 +1,6 @@
 attrs==23.1.0
 branca==0.7.0
-certifi==2023.11.17
+certifi==2024.7.4
 charset-normalizer==3.3.2
 click==8.1.7
 click-plugins==1.1.1
@@ -40,13 +40,13 @@ pyparsing==3.1.1
 pyproj==3.6.1
 python-dateutil==2.8.2
 pytz==2023.3.post1
-requests==2.31.0
-setuptools==69.0.2
+requests==2.32.2
+setuptools==70.0.0
 shapely==2.0.2
 six==1.16.0
 tenacity==8.2.3
 tzdata==2023.3
-urllib3==2.1.0
+urllib3==2.2.2
 virtualenv==20.25.0
 xmltodict==0.13.0
 xyzservices==2023.10.1
